@@ -21,7 +21,7 @@ def directors_totals(nds)
   
   #while element index is less than num of directors
   while element_index < nds.length do
-    result[nds[element_index][:name]] = total
+    result[nds[element_index][:name]] = gross_for_director(nds)
     element_index += 1
   end
   result
