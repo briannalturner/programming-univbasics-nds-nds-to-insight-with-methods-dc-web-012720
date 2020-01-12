@@ -3,12 +3,7 @@ require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(nds)
-  element_index = 0
-  result = {}
-  
-  #while element index is less than num of directors
-  while element_index < nds.length do
+def gross_for_director(nds, el_index)
     total = 0
     new_index = 0
     
@@ -24,7 +19,11 @@ def gross_for_director(nds)
 end
 
 def directors_totals(nds)
-  gross_for_director(nds)
+  element_index = 0
+  result = {}
+  
+  #while element index is less than num of directors
+  while element_index < nds.length do
 end
 
 puts directors_totals(directors_database)
