@@ -3,7 +3,7 @@ require 'directors_database'
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(nds, ind)
+def gross_for_director(nds, element_index)
     total = 0
     new_index = 0
     
